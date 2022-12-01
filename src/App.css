@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.candidateListCard{
+  display: inline-block;
+  margin: 30px;
+  width: 300px;
+}
+.candidateDetailPage{
+  display: inline-block;
+  margin: 50px auto;
+  width: 60%;
+  height: 800px;
+  border: #282c34 solid;
+}
