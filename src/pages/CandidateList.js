@@ -6,6 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { NavLink } from "react-router-dom";
+import Link from '@mui/material/Link';
 
 export default function CandidateList() {
   const [candidates, setCandidates] = useState([]);
@@ -21,14 +22,14 @@ export default function CandidateList() {
     <div>
       {candidates.map((candidate) => (
         <div key={candidate.id} className="candidateListCard">
-          <Card sx={{ maxWidth: 345 }} >
+          <Card>
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                 {candidate.firstName} {candidate.lastName}
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" as={NavLink} to={`/candidates/${candidate.id}`}>More...</Button>
+              <Button size="small"><Link href={`/candidates/${candidate.id}`}>More...</Link></Button>
             </CardActions>
           </Card>
         </div>

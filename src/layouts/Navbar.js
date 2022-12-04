@@ -11,12 +11,11 @@ export default function Navbar() {
   return (
     <div>
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static" color="inherit">
+        <AppBar position="static" color="inherit" className="appBar">
           <Toolbar>
             <IconButton
               size="large"
               edge="start"
-              color="error"
               aria-label="menu"
               sx={{ mr: 2 }}
             >
@@ -26,6 +25,7 @@ export default function Navbar() {
               Online CV Project
             </Typography>
             <Button color="inherit">Login</Button>
+            <Button color="inherit">Sign Up</Button>
           </Toolbar>
         </AppBar>
       </Box>

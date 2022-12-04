@@ -39,7 +39,8 @@
 
 .candidateListCard{
   display: inline-block;
-  margin: 30px;
+  margin-right: 50px;
+  margin-top: 50px;
   width: 300px;
 }
 .candidateDetailPage{
@@ -48,4 +49,16 @@
   width: 60%;
   height: 800px;
   border: #282c34 solid;
+}
+
+.appBar{
+  background-color: #2976ba !important;
+  padding-right: 120px;
+  padding-left: 150px;
+}
+
+.homeImage {
+  margin-top: 10px;
+  padding-right: 40%;
+  width: 35%;
 }
